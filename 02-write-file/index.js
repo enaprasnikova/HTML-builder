@@ -14,7 +14,7 @@ stdin.on('data', (data) => {
   } else {
     writeStream.write(data);
   }
-})
+});
 
 process.on('exit', () => {
   stdout.write('Пока!');
